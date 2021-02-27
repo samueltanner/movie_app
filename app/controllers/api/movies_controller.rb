@@ -8,4 +8,6 @@ class Api::MoviesController < ApplicationController
     @movie = Movie.where(year: 1991)
     render "movies_from_1991.json.jb"
   end
+
+
 end
