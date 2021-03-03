@@ -1,12 +1,41 @@
 class Api::ActorsController < ApplicationController
-  def actor_1_action
-    @actor = Actor.find_by(id: 5) #used id: 5 because 1-4 were delted with the setep 8
-    render "actor_1.json.jb"
+  def index
+    @actors = Actor.all
+    render "index.json.jb"
   end
 
-  def actor_by_id_action
-    input_id = params[:actor_id]
-    @actor = Actor.find_by(id: input_id)
-    render "actor_1.json.jb"
+  def create
+    @actor = Actor.new(
+      first_name: params[:first_name],
+      last_name: params[:last_name],
+      known_for: params[:known_for],
+    )
+    @actor.save
+    render "show.json.jb"
+  end
+
+  def show
+    actor_id = params[:id]
+    @actor = Actor.find_by(id: actor_id)
+    render "show.json.jb"
+  end
+
+  def patch
+    actor_id = params[:id]
+    @actor = Actor.find_by(id: actor_id)
+
+    @actor.first_name = params[:first_name] || @actor.first_name
+    @actor.last_name = params[:last_name] || @actor.last_name
+    @actor.known_for = params[:known_for] || @actor.known_for
+
+    @actor.save
+    render "show.json.jb"
+  end
+
+  def destroy
+    actor_id = params[:id]
+    actor = Actor.find_by(id: actor_id)
+    actor.destroy
+    render json: { message: "The actor was removed." }
   end
 end
