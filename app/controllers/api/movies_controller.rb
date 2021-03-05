@@ -38,7 +38,7 @@ class Api::MoviesController < ApplicationController
     if @movie.save
       render "show.json.jb"
     else
-      render json: { errors: @movie.errors.full_messages }, status: 406
+      render json: { errors: @movie.errors.full_messages }, status: 406 #this give us errors
     end
   end
 
