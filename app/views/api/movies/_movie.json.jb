@@ -6,4 +6,5 @@
   director: movie.director,
   english: movie.english,
   genres: movie.genre_names,
+  image_url: movie.image_url,
 }

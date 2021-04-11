@@ -6,4 +6,5 @@
   gender: actor.gender,
   age: actor.age,
   movie_plot: actor.movie.plot,
+  image_url: actor.image_url,
 }
