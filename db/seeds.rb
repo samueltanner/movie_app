@@ -13,7 +13,7 @@ Genre.create!([
 Movie.create!([
   { title: "Jurassic Park", year: 1993, plot: "dinos are back baby!", director: "Steven Speilberg", english: nil, image_url: nil },
   { title: "spirited away", year: 2002, plot: "girl looses parents to spirits at bathhouse ", director: "Hayao Miyazaki ", english: false, image_url: "https://i5.walmartimages.com/asr/fe6e7557-756b-466a-bd23-7ae3451fb6a3_1.0dfa15eb70dcc08f0eb510cfd65cf462.jpeg?odnWidth=612&odnHeight=612&odnBg=ffffff" },
-  { title: "UP", year: 2005, plot: "Kidnaped! ", director: "", english: nil, image_url: nil },
+  { title: "UP", year: 2005, plot: "Kidnaped! ", director: "Pixar", english: nil, image_url: nil },
   { title: "Titanic", year: 1990, plot: "Floating hotel vs Hard Water", director: "James Cameron", english: true, image_url: nil },
   { title: "sleepless in seattle", year: 1995, plot: "tom hanks houseboat", director: "director", english: true, image_url: nil },
   { title: "Howl's Moving Castle", year: 2004, plot: "girl gets cursed and meets a wizard", director: "miyazaki", english: false, image_url: nil },
