@@ -7,6 +7,7 @@ Genre.create!([
 
 Movie.create!([
   { title: "sleepless in seattle", year: 1995, plot: "tom hanks houseboat", director: "director", english: true, image_url: nil },
+  { title: "big", year: 1995, plot: "tom hanks big", director: "director", english: true, image_url: nil },
 ])
 
 Actor.create!([
@@ -14,4 +15,5 @@ Actor.create!([
 ])
 MovieGenre.create!([
   { genre_id: 1, movie_id: 1 },
+  { genre_id: 1, movie_id: 2 },
 ])
