@@ -10,10 +10,10 @@ Genre.create!([
   { name: "thriller" },
   { name: "drama" },
 ])
+
 Movie.create!([
-  { title: "Jurassic Park", year: 1993, plot: "dinos are back baby!", director: "Steven Speilberg", english: nil, image_url: nil },
+  { title: "Jurassic Park", year: 1993, plot: nil, director: "Steven Speilberg", english: nil, image_url: nil },
   { title: "spirited away", year: 2002, plot: "girl looses parents to spirits at bathhouse ", director: "Hayao Miyazaki ", english: false, image_url: "https://i5.walmartimages.com/asr/fe6e7557-756b-466a-bd23-7ae3451fb6a3_1.0dfa15eb70dcc08f0eb510cfd65cf462.jpeg?odnWidth=612&odnHeight=612&odnBg=ffffff" },
-  { title: "UP", year: 2005, plot: "Kidnaped! ", director: "Pixar", english: nil, image_url: nil },
   { title: "Titanic", year: 1990, plot: "Floating hotel vs Hard Water", director: "James Cameron", english: true, image_url: nil },
   { title: "sleepless in seattle", year: 1995, plot: "tom hanks houseboat", director: "director", english: true, image_url: nil },
   { title: "Howl's Moving Castle", year: 2004, plot: "girl gets cursed and meets a wizard", director: "miyazaki", english: false, image_url: nil },
@@ -23,7 +23,9 @@ Movie.create!([
   { title: "AIR BUD", year: 1999, plot: "kid gets benched for a dog", director: "a really talented director", english: nil, image_url: "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcRFNzHkKNiwdg0Z1rpgkVDk0tTZpjA2MsCLOj3N59pd7y_Km29G" },
   { title: "Monsters Inc.", year: 2003, plot: "little girl has party with monsters", director: "Pixar", english: false, image_url: nil },
   { title: "Good Burger", year: 1997, plot: "When Mondo Burger sets up across the street, sneaky Dexter and burger-obsessed Ed realize they need to fight to keep their fast food joint going. Their new secret sauce might be the answer, but not if Mondo can grab it.", director: "Brian Robbins", english: nil, image_url: "https://mx.web.img3.acsta.net/pictures/210/239/21023903_20130801134951033.jpg" },
+  { title: "UP", year: 2005, plot: "Kidnaped! ", director: "Pixar", english: nil, image_url: nil },
 ])
+
 Actor.create!([
   { first_name: "rqlqlqllq", last_name: "Cumberbatch", known_for: "Sherlock", gender: nil, age: 12, movie_id: 4, image_url: nil },
   { first_name: "Anne", last_name: "Hathaway", known_for: "The Devil Wears Prada", gender: nil, age: nil, movie_id: 4, image_url: nil },
