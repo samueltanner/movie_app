@@ -43,7 +43,7 @@ Actor.create!([
   { first_name: "FACE", last_name: "Wuckert", known_for: "The Diaries from Kingsbridge Heights", gender: nil, age: nil, movie_id: 7, image_url: nil },
 ])
 MovieGenre.create!([
-  { genre_id: 1, movie_id: 1 },
+  { genre_id: 1, movie_id: 4 },
   { genre_id: 4, movie_id: 2 },
   { genre_id: 3, movie_id: 4 },
   { genre_id: 3, movie_id: 20 },
