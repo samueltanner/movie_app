@@ -1,8 +1,8 @@
 class Movie < ApplicationRecord
-  validates :title, presence: true
-  validates :plot, presence: true
-  validates :director, presence: true
-  validates :year, presence: true
+  # validates :title, presence: true
+  # validates :plot, presence: true
+  # validates :director, presence: true
+  # validates :year, presence: true
 
   has_many :actors
   has_many :movie_genres
